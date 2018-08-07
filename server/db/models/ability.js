@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize')
 const db = require('../db')
 
-const Character = db.define('character', {
+const Ability = db.define('ability', {
   name: {
     type: Sequelize.STRING,
     unique: true,
@@ -10,7 +10,15 @@ const Character = db.define('character', {
   type: {
     type: Sequelize.STRING,
     allowNull: false  
+  },
+  value: {
+    type: Sequelize.INTEGER,
+    allowNull: false
+  },
+  image: {
+    type: Sequelize.STRING,
+    allowNull: false
   }
 })
 
-module.exports = Character
+module.exports = Ability
