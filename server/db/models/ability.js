@@ -8,7 +8,7 @@ const Ability = db.define('ability', {
     allowNull: false
   },
   type: {
-    type: Sequelize.STRING,
+    type: Sequelize.ENUM('healing', 'weaponry', 'strength', 'magic'),
     allowNull: false  
   },
   value: {
