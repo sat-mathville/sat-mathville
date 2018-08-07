@@ -15,6 +15,7 @@ const User = db.define('user', {
   },
   satDate: {
     type: Sequelize.DATE
+    //allow this to possibly be null?
   },
   password: {
     type: Sequelize.STRING,
