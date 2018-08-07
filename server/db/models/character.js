@@ -11,6 +11,10 @@ const Character = db.define('character', {
   type: {
     type: Sequelize.STRING,
     allowNull: false  
+  },
+  image: {
+      type: Sequelize.STRING,
+      allowNull: false
   }
 })
 
