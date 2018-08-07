@@ -9,9 +9,11 @@ Character.hasMany(User)
 User.belongsToMany(Ability)
 Ability.belongsToMany(User)
 
-// Ability.belongsTo(Category)
+Ability.belongsTo(Category)
+Category.hasMany(Ability)
 
-
+Category.hasMany(Question)
+Question.belongsTo(Category)
 
 module.exports = {
   Ability,
